@@ -1,0 +1,56 @@
+/**
+ * jQuery Stopwatch
+ * by @websightdesigns
+ */
+
+#timeContainer,
+#timerButtons {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#timeContainer {
+	margin-top: 1em;
+}
+
+#timerValue {
+	font-size: 1.5em;
+}
+
+#timerButtons {
+	text-align: center;
+}
+
+#timerButtons button {
+	font-size: 0.8em;
+}
+
+@media (min-width: 768px) {
+	#timeContainer,
+	#timerButtons {
+		width: 210px;
+	}
+}
+
+@media (max-width: 767px) {
+	#timeContainer {
+		width: 184px;
+	}
+	#timerButtons button {
+		max-width: 32.75%;
+		display: inline-block;
+	}
+}
+
+@media (max-width: 240px) {
+	#timeContainer {
+		width: 100%;
+	}
+	#timerButtons button {
+		width: 100%;
+		max-width: 100%;
+		clear: both;
+		display: block;
+		margin-bottom: 0.75em;
+	}
+}
